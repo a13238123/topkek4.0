@@ -1,10 +1,3 @@
--- Epic Script Leaked By Scratchy!
--- Subscribe for more EPIC scripts! https://www.youtube.com/channel/UC-fFrczkFJuwHJguR6SXx5Q?sub_confirmation=1
-
-
-_G.Rc7Notification = function(a,b,c)
-game:GetService("CoreGui"):WaitForChild("RobloxGui").SendNotification:Fire(a, b, "rbxassetid://776252057", c)
-end
 local topkek = {}
 topkek.patch = '1.0.5a'
 topkek.data = {}
@@ -4258,8 +4251,7 @@ plrwin:drawButton(1/3, 'Camlock', function()
 end)
 --// SERVER //--
 local servwin = topkek.tools.gui:hookContainer(topkek.tools.util.getContainer('Server').Container)
-local detailWin = {}
-
+local detailWin = servwin:drawContainer(1, 100, nil, nil, 18)
 
 --detailWin:drawText(1, 'Genre: ' .. tostring(game.Genre))
 servwin:drawButton(1/2, 'Shutdown', function()
@@ -5275,11 +5267,3 @@ end)
 hatInp = hatwin:drawTextBox(2/3, '')
 topkek.tools.animator.initialAnimation()
 topkek.banmgr.init()
-
-_G.Rc7Notification("Leaked by Scratchy","T0pk3k 4.0 Script Leaked!",5)
-wait(5)
-if game.Workspace.FilteringEnabled == true then
-_G.Rc7Notification("Filtering","Fltering is Enabled",5)
-else
-_G.Rc7Notification("Filtering","Fltering is Disabled",5)
-end
